@@ -7,9 +7,15 @@ class Employee:
         self.Designation = "Senior Developer"
 
 
+    def Travel(self,destination):
+
+        print(f"Employee is now traving to the {destination}")
+        
+
+
 
 
 
 emp = Employee()
 
-print(emp.Dept)
+emp.Travel("Japan")
