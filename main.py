@@ -10,4 +10,5 @@ len(lst) ## calling function
 
 cha = ChatBook()
 
-cha.menu() # calling methos using object
+#cha.menu() # calling methos using object
+print(cha.name)
