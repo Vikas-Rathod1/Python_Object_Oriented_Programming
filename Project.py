@@ -8,11 +8,11 @@ class ChatBook:
         # self.menu()
 
 
-    def get_name(self):
+    def get_name(self): # ggeter method
 
         return self.__name
     
-    def set_name(self, value):
+    def set_name(self, value): #setter method
         #self.__name = input("Enter your name: ")
         self.__name = value
 
