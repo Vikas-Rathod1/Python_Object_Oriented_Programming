@@ -2,13 +2,13 @@ from Project import ChatBook
 
 
 
-cha = ChatBook()
+# cha = ChatBook()
 
-lst = [1,2,3,3]
-len(lst) ## calling function
+# lst = [1,2,3,3]
+# len(lst) ## calling function
 
 
-cha = ChatBook()
+# cha = ChatBook()
 
 #cha.menu() # calling methos using object
 #print(cha.name)
@@ -23,8 +23,35 @@ cha = ChatBook()
 
 ## Getter and setter method
 
-print(cha.get_name())
+# print(cha.get_name())
 
-cha.set_name("vikas X")
+# cha.set_name("vikas X")
 
-print(cha.get_name())
+# print(cha.get_name())
+
+
+#Static method 
+
+'''
+obj = ChatBook()
+print(">>>>>>>obj>>>>>>",obj.id)
+
+obj.id
+obj1 = ChatBook()
+print(">>>>>>obj1>>>>>>>",obj1.id)
+
+obj2 = ChatBook()
+print(">>>>>>obj2>>>>>>>",obj2.id)'''
+
+obj = ChatBook()
+
+print(obj.id)
+
+# adding id as 10 using static method now start point is 10
+ChatBook.set_id(10) 
+obj2=ChatBook()
+print(obj2.id)
+
+#ChatBook.set_id(10) # so now count will be 11 bcz stating at 10 id
+obj3=ChatBook()
+print(obj3.id)

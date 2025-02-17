@@ -1,11 +1,28 @@
 class ChatBook:
+
+    __user_id = 0 # encapsulated attribute/var
     def __init__(self) -> None:
         #print("----",self)
+        self.id=ChatBook.__user_id #access static attribute using clasa name
+        ChatBook.__user_id += 1
         self.__name = "default user"
+        #self.id = 0
+        #self.id +=1
         self.username = ""
         self.password = ""
         self.loggedin = False
         # self.menu()
+
+    @staticmethod  # decorator
+    def get_id(): # static method # no need to add 'self' in static method
+
+        return ChatBook.__user_id
+    
+
+    @staticmethod  # decorator
+    def set_id(value): #static method
+        #self.__name = input("Enter your name: ")
+        ChatBook.__user_id = value
 
 
     def get_name(self): # ggeter method
@@ -93,7 +110,7 @@ class ChatBook:
             print("Please signin first !!")
             print("\n")
             self.menu()
-obj = ChatBook()
+#obj = ChatBook()
 # obj.name = "VikasRathod"
 # print(obj.name)
 # print("....",id(obj))
