@@ -1,12 +1,20 @@
 class ChatBook:
     def __init__(self) -> None:
         #print("----",self)
-        self.name = "default user"
+        self.__name = "default user"
         self.username = ""
         self.password = ""
         self.loggedin = False
         # self.menu()
 
+
+    def get_name(self):
+
+        return self.__name
+    
+    def set_name(self, value):
+        #self.__name = input("Enter your name: ")
+        self.__name = value
 
     def menu(self):
         user_input = input("""Welcome to the Chatbook.How would you you like to proceed?
