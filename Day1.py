@@ -14,6 +14,11 @@ class Employee:
         print("Inside Travel function")
 
         print(f"Employee is now traving to the {destination}")
+
+    # def Travel1(destination): #removed self and try accesing method below
+    #     print("Inside Travel function")
+
+    #     print(f"Employee is now traving to the {destination}")
         
 
 
@@ -29,3 +34,4 @@ print(emp.Dept , emp.Designation, emp.Name, emp.Salary)
 
 #Calling method using object
 emp.Travel("Japan")
+#emp.Travel1("Japan")
