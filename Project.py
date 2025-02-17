@@ -1,10 +1,11 @@
 class ChatBook:
     def __init__(self) -> None:
-        print("----",self)
+        #print("----",self)
+        self.name = "default user"
         self.username = ""
         self.password = ""
         self.loggedin = False
-        self.menu()
+        # self.menu()
 
 
     def menu(self):
@@ -85,7 +86,9 @@ class ChatBook:
             print("\n")
             self.menu()
 obj = ChatBook()
-print("....",id(obj))
-#obj.signup()
-obj1 = ChatBook()
-print("..+..",id(obj1))
+# obj.name = "VikasRathod"
+# print(obj.name)
+# print("....",id(obj))
+# #obj.signup()
+# obj1 = ChatBook()
+# print("..+..",id(obj1))
